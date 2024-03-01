@@ -22,7 +22,7 @@ sair_guardar.onclick = function() {
     window_guardar.classList.add('guardar-hide');
 }
 action_guardar.onclick = function() {
-    if (entrada_guardar.value < money) {
+    if (entrada_guardar.value <= money) {
         money = money - entrada_guardar.value;
         localStorage.setItem('valor', money);
         localStorage.setItem('valor_caixinha', entrada_guardar.value);
