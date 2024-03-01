@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#fundo-page {
+    width: 100%;
+}
+.bt-sair {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border-radius: 14px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    font-family: helvetica;
+}
+#sair-caixinha {
+    background-color: rgba(0,0,0,0.6);
+    color: #FFF;
+    padding: 10px 13px;
+}
+#principal {
+    padding: 20px 0 20px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-bottom: 2px solid #D3D3D3;
+}
+#titulo {
+    font-family: Arial, sans-serif;
+}
+.money {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 45px;
+}
+#bt_interactions {
+    padding: 30px 0 0 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.button {
+    padding: 15px;
+    width: 600px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+#bt-guardar {
+    background-color: #8a2be2;
+    color: #FFF;
+}
+.window-guardar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #FFF;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px 30px;
+}
+.guardar-hide {
+    display: none;
+}
+#sair-guardar {
+    background-color: rgba(0,0,0,0.0);
+    color: #818181;
+}
+#titulo-guardar {
+    font-family: Helvetica;
+    font-weight: bold;
+}
+#subtitle-guardar {
+    font-family: helvetica;
+    color: #818181;
+}
+#action-guardar {
+    background-color: #8a2be2;
+    width: 30px;
+    padding: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

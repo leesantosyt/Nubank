@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#corpo {
+    
+}
+#cima {
+    height: 100px;
+    background-color: #8A2BE2;
+}
+#principal {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    background-image: url('assets/inicio.jpg');
+    height: 600px;
+}
+.form-asset {
+    display: flex;
+    flex-direction: column;
+}
+#formulario {
+    height: 350px;
+    width: 300px;
+    border: 0.4px solid #000;
+    background-color: #FFF;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+#form-info {
+    width: 200px;
+    gap: 15px;
+    border: none;
+}
+.texto {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color: #616161;
+}
+#entrar {
+    background-color: #1c94f7;
+    border: 0.4px solid #202020;
+    width: 200px;
+    padding: 6px 0px;
+    border-radius: 14px;
+    color: #FFF;
+    transition: transform 0.2s;
+}
+#entrar:hover {
+    transform: scale(1.05);
+}

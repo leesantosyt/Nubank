@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="principal.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/nu-icon.png">
+    <title>Nubank</title>
+</head>
+<body>
+    <header id="cima">
+        <div id="menu">
+            <button class="button button-header" id="bt_perfil"><img class="icons" src="assets/perfil-icon.png"></button>
+            <nav id="navigation">
+                <button class="button button-header" id="bt-visible"><img class="icons" id="img-visible" src="assets/visible-icon.png"></button>
+                <button class="button button-header"><img class="icons" src="assets/help-icon.png"></button>
+                <button class="button button-header"><img class="icons" src="assets/carta-icon.png"></button>
+            </nav>
+        </div>
+        <p id="username"></p>
+    </header>
+    <main>
+        <section class="transfer">
+            <div id="account">
+                <div id="account-info">
+                    <h1 class="text">Conta</h1>
+                    <p id="account-start">></p>
+                </div>
+                <span class="text saldo-account"></span>
+            </div>
+            <div id="menu-pay">
+                <button class="button"><img src="assets/pix-icon.png"></button>
+                <button class="button"><img src="assets/barras-icon.png"></button>
+                <button class="button"><img src="assets/transfer-icon.png"></button>
+                <button class="button"><img src="assets/deposite-icon.png"></button>
+                <button class="button"><img src="assets/recarga-icon.png"></button>
+                <button class="button"><img src="assets/cobrar-icon.png"></button>
+            </div>
+            <div id="carts">
+                    <button class="box" id="bt-caixinhas">
+                        <div id="titulo-caixinhas">
+                            <img src="assets/caixinha-icon.png">
+                            <span>Caixinhas</span>
+                        </div>
+                        <span class="saldo-account" id="caixinhas-principal"></span>
+                    </button>
+                <button class="box">
+                    <img src="assets/cartao-icon.png">
+                    <span>Meus cartões</span>
+                </button>
+            </div>
+        </section>
+        <section class="transfer">
+            <div class="box">
+                <img src="assets/ass_pay-icon.png">
+                <span>Assistente de pagamentos</span>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

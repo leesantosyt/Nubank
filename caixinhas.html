@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="caixinhas.css">
+    <script defer src="caixinhas.js"></script>
+    <title>Nubank - caixinhas</title>
+</head>
+<body>
+    <img id="fundo-page" src="assets_caixinhas/fundo.png">
+    <button class="bt-sair" id="sair-caixinha">X</button>
+    <main id="principal">
+        <h1 id="titulo">Reserva de emergência</h1>
+        <span class="money" id="money-caixinha"></span>
+    </main>
+    <div id="bt_interactions">
+        <button class="button">Resgatar</button>
+        <button class="button" id="bt-guardar">Guardar</button>
+    </div>
+    <div class="guardar-hide window-guardar">
+        <button class="bt-sair" id="sair-guardar">X</button>
+        <h2 id="titulo-guardar">Quanto você quer guardar?</h2>
+        <p id="subtitle-guardar">Disponível para guardar, <span id="money-disponivel"></span></p>
+        <input id="entrada-caixinha" placeholder="R$ 0,00">
+        <button id="action-guardar">
+            <img src="assets_caixinhas/seta-direita.png">
+        </button>
+    </div>
+</body>
+</html>
