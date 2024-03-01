@@ -10,7 +10,7 @@ var money = parseFloat(localStorage.getItem('valor'));
 let valor_caixinha = parseFloat(localStorage.getItem('valor_caixinha'));
 
 sair_caixinha.onclick = function() {
-    window.location.replace('file:///D:/Leandro/Programas/Trabalhos/Site%20nubank/principal.html');
+    window.location.replace('https://leesantosyt.github.io/Nubank/principal.html');
 }
 money_disponivel.innerHTML = money.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 money_caixinha.innerHTML = valor_caixinha.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
