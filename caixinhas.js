@@ -22,11 +22,13 @@ sair_guardar.onclick = function() {
     window_guardar.classList.add('guardar-hide');
 }
 action_guardar.onclick = function() {
-    money = money - entrada_guardar.value;
-    localStorage.setItem('valor', money);
-    localStorage.setItem('valor_caixinha', entrada_guardar.value);
-    valor_caixinha += parseFloat(localStorage.getItem('valor_caixinha'));
-    localStorage.setItem('valor_caixinha', valor_caixinha);
-    money_caixinha.innerHTML = valor_caixinha.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-    window_guardar.classList.add('guardar-hide');
+    if (entrada_guardar.value < money) {
+        money = money - entrada_guardar.value;
+        localStorage.setItem('valor', money);
+        localStorage.setItem('valor_caixinha', entrada_guardar.value);
+        valor_caixinha += parseFloat(localStorage.getItem('valor_caixinha'));
+        localStorage.setItem('valor_caixinha', valor_caixinha);
+        money_caixinha.innerHTML = valor_caixinha.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        window_guardar.classList.add('guardar-hide');
+    }
 }
