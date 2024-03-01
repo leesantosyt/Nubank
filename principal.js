@@ -40,7 +40,7 @@ bt_visible.onclick = function() {
     }
 }
 bt_caixinhas.onclick = function() {
-    window.location.assign('file:///D:/Leandro/Programas/Trabalhos/Site%20nubank/caixinhas.html');
+    window.location.assign('https://leesantosyt.github.io/Nubank/caixinhas.html');
 }
 
 var resultado = '';
